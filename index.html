@@ -1,149 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-  <div id="container">
-
-    <nav id="navigation">
-      <!-- quero deixar esse menu movel depois, quero que ele acompanhe a pagina quando ela for rolada  -->
-      <img src="./images/logo.svg" alt="essa é a logo da marca, uns quadrados sobrepostos e o nome fylo">
-      <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="./login.html">Sing in</a></li>
-      </ul>
+    <nav class="navigation">
+        <img src="./images/logo.svg" alt="Fylo logo">
+        <div>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Sing in</a></li>
+            </ul>
+        </div>
     </nav>
-
     <main>
-      <section id="secure">
-        <img src="./images/illustration-1.svg" alt="duas pessoas colocando arquivos em uma pasta gigante">
+        <section class="secure">
+            <img src="./images/illustration-1.svg" alt="imagen de duas pessoas pegando arquivos de uam pasta super grande ">
+            <div class="secure_text">
+                <h1>All your files in one secure location, accessible anywhere.</h1>
 
-        <div class="secureInputText">
-          <div class="secureText">
-            <h2>All your files in one secure location, accessible anywhere.</h2>
-            <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers</p>
-          </div>
-  
-          <div class="secureInput">
-            <input type="email" placeholder="Enter your email..." name="" id="">
-            <input class="button" type="button" value="Get Started">
-          </div>
-        </div>
-      </section>
+                <p>Fylo stores your most important files in one secure location. Access them wherever you need, shere and collaborate with friends, damily, and co-workers.</p>
 
-      <section class="productive">
-         <img class="bg-curve-mobile" src="./images/bg-curve-mobile.svg" alt=""> 
-         <img src="./images/illustration-2.svg" alt="">
-
-         <div class="productiveText">
-            <h4>Stay productive, wherever you are</h4>
-            <p>Never let location be an issue when accessing your files, Fylo has you covered for all of your files storafe needs.</p>
-            <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-
-            <a href="#">
-              See how Fylo work
-              <img src="./images/icon-arrow.svg" alt="">
-            </a>
-
-          </div>
-          
-          <div class="productiveComment">
-            <img src="./images/icon-quotes.svg" alt="imagens de uma espa dupla">
-            <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-
-            <div class="commentProfile">
-              <img src="./images/avatar-testimonial.jpg" alt="imagem de perfil">
-              <div class="commentProfile-text">
-                  <h6>Kyle Burton</h6>
-                  <p>Founder & CEO, Huddle</p>
-              </div>
+                <form class="secure_text_input">
+                    <input type="email" placeholder="Enter your email." required>
+                    <input type="submit" value="Get Started">
+                    <!-- <button>Get Started</button> -->
+                </form>
             </div>
-          </div>
+        </section>
+        <section class="productive">
+            <img src="./images/illustration-2.svg" alt="">
+            <div class="productive_content">
+               <div class="productive_text">
+                    <h3>Stay productive, wherever you are</h3>
+                    <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+                    <p>Securely share files and folders with friends, family and collegues for live collaboration. No email attachments required!</p>
 
-      
-      </section>
+                  
+                    
+                        <a class="productive_text_link" href="#">
+                            See how Fylo works
+                            <img src="./images/icon-arrow.svg" alt="arrow right">
+                        </a>
 
-      <section class="early">
-          <div class="earlyText">
-            <h4>Get early access today</h4>
-            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy help you.</p>
-          </div>
-
-         <div class="earlyInput">
-          <input type="text" placeholder="email@exemple.com">
-          <button>Get Started For Free</button>
-         </div>
-
-      </section>
-
-      <section class="footerFylo">
-        <!-- <img src="./images/logo.svg" alt="imagem logo do site"> -->
-        <h2># Fylo</h2>
-        
-        <div class="footer-fylo-group"> 
-          <div class="footerContact">
-            <div>
-              <img src="./images/icon-phone.svg" alt="phone image">
-              <p>Phone: +1-543-123-4567</p>
+               </div>
             </div>
-            <div>
-              <img src="./images/icon-email.svg" alt="email image">
-              <p>exemple@fylo.com</p>
-            </div>
-          </div>
 
-          <div class="fyloServices">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-
-          <div class="fyloTerms">
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-            </ul>
-          </div>
-
-          <div class="fyloSocial">
-            <ion-icon class="ion-icon" name="logo-facebook"></ion-icon>
-            <ion-icon class="ion-icon" name="logo-twitter"></ion-icon>
-            <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
-          </div>
-        </div>
-
-      </section>
+           
+        </section>
     </main>
-    
-    <footer>
-     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/lucasrei9" target="_blank">Lucas Reis</a>.
-      </p>
-    </footer>
-  </div>
 
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
